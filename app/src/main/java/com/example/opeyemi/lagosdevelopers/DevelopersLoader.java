@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class DevelopersLoader extends AsyncTaskLoader<ArrayList<Developer>> {
 
     //the api URL to load the developers in Lagos from
-    private static final String urlString = "https://api.github.com/search/users?q=location:lagos";
+    private static final String urlString = "https://api.github.com/search/users?q=location:lagos+language:java";
 
     public DevelopersLoader(Context context){
         super(context);
